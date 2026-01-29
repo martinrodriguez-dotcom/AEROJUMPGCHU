@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AeroJump Gualeguaychú - Reservas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="app">
+        <header>
+            <h1>AeroJump Gualeguaychú</h1>
+            <div class="nav-calendar">
+                <button id="prevMonth">&lt; Anterior</button>
+                <h2 id="currentMonthYear"></h2>
+                <button id="nextMonth">Siguiente &gt;</button>
+            </div>
+        </header>
+
+        <div id="calendar" class="calendar-grid"></div>
+    </div>
+
+    <div id="modalReservas" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3 id="modalDateTitle">Reservas del día</h3>
+            
+            <div id="listaReservas">
+                </div>
+
+            <hr>
+            <h4>Nueva Reserva</h4>
+            <form id="formReserva">
+                <input type="text" id="nombreCliente" placeholder="Nombre del cliente" required>
+                <input type="time" id="horaReserva" required>
+                <button type="submit">Guardar Reserva</button>
+            </form>
+        </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
